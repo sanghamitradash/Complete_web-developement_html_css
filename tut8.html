@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <h2>This is HTML forms tutorial</h2>
+    <!-- submit this form in backend.php -->
+    <form action="backend.php">
+
+        <!-- div is a block element so it will take whole width for name so that role has to go down 
+         
+        Name means in backend.php there has some rules for taking this name, role and email means my backend have feature for taking corresponding values...-->
+        <div>
+            Name: <input type="text" name="myName">
+        </div>
+        <br>
+
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        
+        <div>
+            Date: <input type="Date" name="myDate">
+        </div>
+        <br>
+        
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility">
+        </div>
+        <br>
+        
+        <!-- if i give same name to both that means i can only one option -->
+        <div>
+            Gender: Male<input type="radio" name="myGender" > FeMale<input type="radio" name="MyGender" > Other<input type="radio" name="myGender">
+        </div>
+        <br>
+
+        <div>
+            Write about yourself:<br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+        
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+
+</body>
+
+</html>
