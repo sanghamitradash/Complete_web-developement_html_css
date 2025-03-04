@@ -13,11 +13,15 @@
     <!-- submit this form in backend.php -->
     <form action="backend.php">
 
-        <!-- div is a block element so it will take whole width for name so that role has to go down 
-         
-        Name means in backend.php there has some rules for taking this name, role and email means my backend have feature for taking corresponding values...-->
+        <!-- div is a block element so it will take whole width for name so that role has to go down -->
+
+        <!-- label is used for if i click on name keyword then that field will selected -->
+        <label for="name">Name</label>
+        <!-- for = "name" means the id which is named by "name" in Name: <input type="text" name="myName" id = "name"> -->
+
         <div>
-            Name: <input type="text" name="myName">
+            <!-- Name means in backend.php there has some rules for taking this name, role and email means my backend have feature for taking corresponding values... -->
+            <input type="text" name="myName" id="name">
         </div>
         <br>
 
@@ -30,32 +34,46 @@
             Email: <input type="email" name="myEmail">
         </div>
         <br>
-        
+
         <div>
             Date: <input type="Date" name="myDate">
         </div>
         <br>
-        
+
         <div>
             Bonus: <input type="number" name="myBonus">
         </div>
         <br>
-        
+
+        <label for="eligibility">Are you eligible?: </label>
         <div>
-            Are you eligible?: <input type="checkbox" name="myEligibility">
+            <input type="checkbox" name="myEligibility" id="eligibility">
         </div>
         <br>
-        
+
         <!-- if i give same name to both that means i can only one option -->
         <div>
-            Gender: Male<input type="radio" name="myGender" > FeMale<input type="radio" name="MyGender" > Other<input type="radio" name="myGender">
+            Gender: Male<input type="radio" name="myGender"> FeMale<input type="radio" name="MyGender"> Other<input
+                type="radio" name="myGender">
         </div>
         <br>
 
         <div>
             Write about yourself:<br><textarea name="myText" cols="90" rows="10"></textarea>
         </div>
-        
+        <br>
+
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+            <!-- Option for different cars -->
+            <option value="ind">Indica</option>
+            <!-- selected is used if i want to select a car bydefault -->
+            <option value="swf" selected>Swift</option>
+        </select>
+        </div>
+        <br>
+
         <div>
             <input type="submit" value="Submit Now">
             <input type="reset" value="Reset Now">
