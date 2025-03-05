@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <!-- this is external css -->
+    <link rel="stylesheet" href="tut13.css">
+    
+    <!-- which is written later precedence will be more of that -->
+     <!-- this is internal css -->
+     <style>
+         p{
+             color: purple;
+             background-color: seagreen !important;
+            }
+            </style>
+</head>
+<body>
+    <h3>This is CSS Tutorial</h3>
+    <!-- <p style="color:red; background-color: yellow;">This tutorial will teach you everything you need to know about HTML/CSS</p> -->
+
+        <p>This tutorial will teach you everything you need to know about HTML/CSS</p>
+</body>
+</html>
+
+<!-- inline css will take more precedence
+in between external and internal css which will written later that will take more precedence -->
